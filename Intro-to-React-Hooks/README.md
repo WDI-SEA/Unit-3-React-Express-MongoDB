@@ -33,8 +33,7 @@ This lesson will cover the use case of hooks and demonstrate how to use the two 
 
 To get set up for this lesson:
 
-- `cd ~/code` to move into your code folder.
-- Clone the starter code:  `git clone https://git.generalassemb.ly/SEI-CC/react-hooks.git`
+- `cd` into this code folder.
 - Move into the new folder:  `cd react-hooks`
 - Install the Node modules:  `npm i`
 - Open the project in VS Code
