@@ -1,4 +1,5 @@
 import './Nav.css'
+import MenuItem from '../MenuItem/MenuItem';
 
 export default function Nav(props) {
     return(
@@ -33,42 +34,9 @@ export default function Nav(props) {
 
             <div className="lower-nav">
                 <ul className="lower-nav-ul">
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
+                    {[0,1,2,3,4,5].map(a =>     
+                        < MenuItem />
+                    )}
                     <i className="fa fa-search"></i>            
                 </ul>
             </div>
