@@ -20,7 +20,7 @@
 
 To get set up for this lesson, please:
 
-- Create a React Sandbox in [CodeSandbox](https://codesandbox.io/) and name it "Handling Input".
+- Create a new react project and name it "React-Handling-Input".
 
 - Replace the existing `<App>` component with this starting code:
 
