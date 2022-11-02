@@ -28,7 +28,7 @@
 }
 
 .logo-nav {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/The_logo_simpsons_yellow.svg/1200px-The_logo_simpsons_yellow.svg.png");
+    background-image: url("https://www.dreamworks.com/storage/movies/shrek/shrek-logo.png");
     background-position: center;
     background-size: contain;
     padding-top: 10%;
@@ -54,7 +54,7 @@
 }
 
 .link-socialmedia *:hover {
-    color: orange;
+    color: #9EBE3B;
     transition: 0.5s;
 }
 
@@ -71,7 +71,7 @@
 
 .btn-donate {
     color: white;
-    background-color: #f7941d;
+    background-color: #9EBE3B;
     padding: 1em;
     transition: .2s;
     font-size: 1em;
@@ -111,11 +111,11 @@
 }
 
 .trigger:hover {
-    border-color: orange;
+    border-color: #9EBE3B;
 }
 
 .trigger a:hover {
-    color: orange;
+    color: #9EBE3B;
     transition: 0.5s;
 }
 
@@ -149,7 +149,7 @@ li:hover .submenu{
 
 .submenu li:hover a {
     /*background-color: black;*/
-    color: orange;
+    color: #9EBE3B;
     cursor: pointer;
     transition: 0.5s;
 }

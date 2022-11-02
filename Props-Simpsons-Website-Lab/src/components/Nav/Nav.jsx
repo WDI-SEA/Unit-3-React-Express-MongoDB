@@ -1,6 +1,13 @@
 import './Nav.css'
+import MenuItem from '../MenuItem/MenuItem.jsx'
+import {useState} from 'react'
 
 export default function Nav(props) {
+
+    let [state] = useState({
+       items: ['Shrek Facts','Fiona Facts','Donkey Facts','encyclopedia','Games','Food']
+     })  
+
     return(
         <nav className="nav-bar">
             <div className="upper-nav">
@@ -19,7 +26,7 @@ export default function Nav(props) {
                     <div className="right-upper-nav">
                         <ul className="cover-contact-about">
                             <li className="trigger"><a href="/#">VISIT SPRINGFIELD!</a></li>
-                            <li className="trigger"><a href="/#">MENU ITEM</a>
+                            <li className="trigger"><a href="/#">VISIT SHREK SWAMP</a>
                                 <ul className="submenu">
                                     <li><a href="/#">Link 1</a></li>
                                     <li><a href="/#">Link 2</a></li>
@@ -33,44 +40,19 @@ export default function Nav(props) {
 
             <div className="lower-nav">
                 <ul className="lower-nav-ul">
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <li className="trigger"><a href="/#">MENU ITEM</a>
-                        <ul className="submenu">
-                            <li><a href="/#">Link 1</a></li>
-                            <li><a href="/#">Link 2</a></li>
-                        </ul>
-                    </li>
-                    <i className="fa fa-search"></i>            
+                     {/* {state.items.map(item =>{
+                <MenuItem key={item} title={item}/>   
+                })}     */}
+                     <MenuItem title={state.items[0]}/>
+                     <MenuItem title={state.items[1]}/>
+                     <MenuItem title={state.items[2]}/>
+                     <MenuItem title={state.items[3]}/>
+                     <MenuItem title={state.items[4]}/>
+                     <MenuItem title={state.items[5]}/>
+                     
+                    <i className="fa fa-search"></i>  
                 </ul>
+                
             </div>
         </nav>
     );
