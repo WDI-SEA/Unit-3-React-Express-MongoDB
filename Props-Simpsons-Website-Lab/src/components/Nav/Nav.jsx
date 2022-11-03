@@ -1,4 +1,5 @@
 import './Nav.css'
+import MenuItem from '../MenuItem/MenuItem';
 
 export default function Nav(props) {
     return(
